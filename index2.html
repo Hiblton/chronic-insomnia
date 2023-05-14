@@ -7,7 +7,7 @@
     <meta name="keywords" content="alternative, pop-punk, rock, band">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/8f0279a40f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -29,17 +29,17 @@
                 </main>
 
                 <div class="flex-center">
-                    <a id="youtube" href="https://www.youtube.com/@chronic.insomnia" target="__blank">
-                        <i class="fa fa-youtube fa-4x icon-3d"></i>
+                    <a id="instagram" href="https://www.instagram.com/chronic.insomnia.official" target="__blank">
+                        <i class="fa fa-instagram fa-4x icon-3d"></i>
                     </a>
                     <a id="facebook" href="https://www.facebook.com/chronic.insomnia.official" target="__blank">
                         <i class="fa fa-facebook fa-4x icon-3d"></i>
                     </a>
-                    <a id="instagram" href="https://www.instagram.com/chronic.insomnia.official" target="__blank">
-                        <i class="fa fa-instagram fa-4x icon-3d"></i>
+                    <a id="youtube" href="https://www.youtube.com/@chronic.insomnia" target="__blank">
+                        <i class="fa fa-youtube fa-4x icon-3d"></i>
                     </a>
-                    <a id="phone" href="tel:+48 572 197 687" target="__blank">
-                        <i class="fa fa-whatsapp fa-4x icon-3d"></i>
+                    <a id="tiktok" href="https://www.tiktok.com/@chronic.insomnia" target="__blank">
+                        <i class="fa fa-brands fa-tiktok fa-4x icon-3d"></i>
                     </a>
                 </div>
             </div>
@@ -68,9 +68,9 @@
         });
         window.location.href = 'https://linktr.ee/chronicinsomnia';
     }, false);
-    document.getElementById("youtube").addEventListener("click", function () {
+    document.getElementById("instagram").addEventListener("click", function () {
         gtag('event', 'click', {
-            event_label: 'youtube_clicked'
+            event_label: 'instagram_clicked'
         });
     }, false);
     document.getElementById("facebook").addEventListener("click", function () {
@@ -78,14 +78,14 @@
             event_label: 'facebook_clicked'
         });
     }, false);
-    document.getElementById("instagram").addEventListener("click", function () {
+    document.getElementById("youtube").addEventListener("click", function () {
         gtag('event', 'click', {
-            event_label: 'instagram_clicked'
+            event_label: 'youtube_clicked'
         });
     }, false);
-    document.getElementById("phone").addEventListener("click", function () {
+    document.getElementById("tiktok").addEventListener("click", function () {
         gtag('event', 'click', {
-            event_label: 'phone_clicked'
+            event_label: 'tiktok_clicked'
         });
     }, false);
 </script>
