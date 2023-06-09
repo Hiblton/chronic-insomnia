@@ -1683,26 +1683,3 @@ p {
     transform: rotate(360deg);
   }
 }
-
-#play,
-#pause {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  opacity: 0.5;
-  color: #ffd60a;
-  cursor: pointer;
-}
-
-#play:hover,
-#pause:hover {
-  opacity: 0.9;
-  -webkit-animation: icon3d 200ms 10;
-  animation: icon3d 200ms 10;
-}
-
-.hidden {
-  display: none;
-}

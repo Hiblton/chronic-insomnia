@@ -21,16 +21,16 @@
 
                 <main class="album-wrapper">
                     <div id="album">
-                        <div id="cover">
-                            <div id="print"></div>
-                        </div>
+                        <a id="hearnow" href="https://chronicinsomnia.hearnow.com/" target="__blank">
+                            <div id="cover">
+                                <div id="print"></div>
+                            </div>
+                        </a>
                         <div id="vinyl">
                             <div id="print"></div>
                         </div>
-
-                        <i class="fa fa-play fa-fade fa-4x" id="play"></i>
-                        <i class="fa fa-pause fa-fade fa-4x hidden" id="pause"></i>
                     </div>
+
                 </main>
 
                 <div class="flex-center">
@@ -55,9 +55,6 @@
             <div class="comet"></div>
         </div>
     </div>
-    <audio autoplay loops id="player" style="display: none">
-        <source src="media/dream.mp3" type="audio/mp3">
-    </audio>
 </body>
 
 <!-- Google tag (gtag.js) -->
@@ -70,27 +67,10 @@
     gtag("js", new Date());
     gtag("config", "G-N5FVYHE6SN");
 
-    var player = document.getElementById("player");
-
-    document.getElementById("play").addEventListener("click", function () {
+    document.getElementById("hearnow").addEventListener("click", function () {
         gtag('event', 'click', {
-            event_label: 'play_clicked'
+            event_label: 'hearnow_clicked'
         });
-
-        player.play();
-
-        document.getElementById("play").classList.add("hidden");
-        document.getElementById("pause").classList.remove("hidden");
-    }, false);
-    document.getElementById("pause").addEventListener("click", function () {
-        gtag('event', 'click', {
-            event_label: 'pause_clicked'
-        });
-
-        player.pause();
-
-        document.getElementById("pause").classList.add("hidden");
-        document.getElementById("play").classList.remove("hidden");
     }, false);
     document.getElementById("instagram").addEventListener("click", function () {
         gtag('event', 'click', {
